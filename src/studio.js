@@ -5,14 +5,14 @@
 import { $, $$, LS, lum, hexA, toast, openM, closeM, isOpen, saveFile, dataURLtoBlob } from "./util.js";
 
 const PALETTES = [
-  ["#6EE7B7", "#3B82F6"], ["#F97316", "#DB2777"], ["#7C3AED", "#C026D3"], ["#0EA5E9", "#1E3A8A"], ["#22D3EE", "#A3E635"],
-  ["#0F172A", "#334155"], ["#14532D", "#65A30D"], ["#FDE68A", "#FCA5A5"], ["#111111", "#2B2B2B"], ["#F43F5E", "#FB923C"], ["#E0E7FF", "#C7D2FE"], ["#064E3B", "#0F766E"],
+  ["#FF8A4C", "#D9381E"], ["#2B2420", "#4A3B30"], ["#F97316", "#DB2777"], ["#7C3AED", "#C026D3"], ["#0EA5E9", "#1E3A8A"], ["#22D3EE", "#A3E635"],
+  ["#0F172A", "#334155"], ["#14532D", "#65A30D"], ["#FDE68A", "#FCA5A5"], ["#111111", "#2B2B2B"], ["#F43F5E", "#FB923C"], ["#E0E7FF", "#C7D2FE"], ["#064E3B", "#0F766E"], ["#6EE7B7", "#3B82F6"],
 ];
 
 const ST = Object.assign({
   logoMode: "gen", upload: null, uploadType: null, pad: false, padColor: "#ffffff", padShape: "rounded",
   lgText: "", lgShape: "rounded", lgC1: PALETTES[0][0], lgC2: PALETTES[0][1], lgFg: "#ffffff", lgFont: "800 |Inter", lgShine: true,
-  bnSize: "1280x640", bnLayout: "left", bnTitle: "", bnTag: "", bnC1: "#0F172A", bnC2: "#334155", bnFg: "#ffffff",
+  bnSize: "1280x640", bnLayout: "left", bnTitle: "", bnTag: "", bnC1: "#1C1612", bnC2: "#3B2A20", bnFg: "#ffffff",
   bnBg: "linear", bnPat: "dots", bnFont: "800 |Inter", bnLogoSize: 100, bnRepo: true, bnRound: false,
 }, LS.get("studio", {}));
 ST.upload = LS.get("logoUpload", null);

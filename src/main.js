@@ -419,7 +419,7 @@ function tplCard(t, mine) {
   d.innerHTML = `<h4>${esc(t.name)} ${mine ? '<span class="tag mine">Mine</span>' : ""}${cur ? '<span class="tag">Current</span>' : ""}</h4>
     <p>${esc(t.desc || "")}</p>
     <div class="mini">${t.sections.length} sections: ${t.sections.map(s => esc(s.title)).join(" · ")}</div>
-    <div class="acts"><button class="btn sm primary" data-a="use">${cur ? "Start over" : "Use this"}</button>${mine ? '<button class="btn sm danger" data-a="del">Delete</button>' : ""}</div>`;
+    <div class="acts"><button class="btn sm${cur ? "" : " use"}" data-a="use">${cur ? "Start over" : "Use this"}</button>${mine ? '<button class="btn sm danger" data-a="del">Delete</button>' : ""}</div>`;
   d.querySelector('[data-a="use"]').onclick = () => useTemplate(t);
   const del = d.querySelector('[data-a="del"]'); if (del) del.onclick = () => deleteTemplate(t);
   return d;

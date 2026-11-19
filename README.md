@@ -1,8 +1,6 @@
 <p align="center">
-  <img src="public/favicon.svg" alt="Readme Forge logo" width="96" />
+  <img src="docs/social-preview.png" alt="Readme Forge: hammer out a polished GitHub README in minutes" width="100%" />
 </p>
-
-<h1 align="center">Readme Forge</h1>
 
 <p align="center">
   Build a polished GitHub README in your browser: pick a template, edit sections with a live preview, design a logo and banner, then export.
@@ -13,8 +11,9 @@
 </p>
 
 <p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT license"></a>
-  <a href="https://github.com/Squidly1408/ReadMe-Forge/actions/workflows/deploy.yml"><img src="https://github.com/Squidly1408/ReadMe-Forge/actions/workflows/deploy.yml/badge.svg" alt="Deploy status"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-ff6a2b?style=flat-square&labelColor=201c18" alt="MIT license"></a>
+  <img src="https://img.shields.io/badge/tracking-none-ff6a2b?style=flat-square&labelColor=201c18" alt="No tracking">
+  <a href="https://github.com/Squidly1408/ReadMe-Forge/actions/workflows/deploy.yml"><img src="https://img.shields.io/github/actions/workflow/status/Squidly1408/ReadMe-Forge/deploy.yml?branch=main&label=deploy&style=flat-square&labelColor=201c18" alt="Deploy status"></a>
 </p>
 
 ![Readme Forge screenshot](docs/screenshot.png)
@@ -70,6 +69,7 @@ This repo deploys to **GitHub Pages** automatically on every push to `main` (see
 ├── index.html          # App shell and dialogs
 ├── privacy.html        # Privacy Policy
 ├── terms.html          # Terms and Conditions
+├── docs/               # Screenshot and social preview image
 ├── public/
 │   └── favicon.svg     # Logo
 ├── src/
@@ -91,6 +91,22 @@ To add a new section, add an entry to `LIB` in [src/library.js](src/library.js).
 - [marked](https://marked.js.org/) for markdown rendering
 - [DOMPurify](https://github.com/cure53/DOMPurify) to sanitise the preview
 - [JSZip](https://stuk.github.io/jszip/) for the .zip export
+
+## Brand
+
+<img src="public/favicon.svg" alt="Readme Forge logo" width="64" align="right" />
+
+The logo is a markdown `#` drawn as an anvil: the top bar is the anvil face and horn, the strokes are the waist, and the tips glow like hot metal. The source is [public/favicon.svg](public/favicon.svg), and it switches colours for light and dark backgrounds.
+
+| Role | Colour | Token |
+| :-- | :-- | :-- |
+| Ember (brand, primary actions) | `#ff6a2b` | `--accent` |
+| Ember text (small orange text on dark) | `#ff8c5a` | `--accent-text` |
+| Ink (logo, main text) | `#ece7dc` | `--text` |
+| Background | `#100e0c` | `--bg` |
+| Panel | `#181512` | `--panel` |
+
+Every colour in the app is a CSS custom property in [src/styles.css](src/styles.css). Text and accent pairs meet WCAG AA contrast (4.5:1 or better). The README preview keeps GitHub's own colours so it matches what you'll see on GitHub. [docs/social-preview.png](docs/social-preview.png) is sized for **Settings → Social preview**.
 
 ## Privacy
 
