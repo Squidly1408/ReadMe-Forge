@@ -68,6 +68,8 @@ This repo deploys to **GitHub Pages** automatically on every push to `main` (see
 
 ```text
 ├── index.html          # App shell and dialogs
+├── privacy.html        # Privacy Policy
+├── terms.html          # Terms and Conditions
 ├── public/
 │   └── favicon.svg     # Logo
 ├── src/
@@ -76,6 +78,7 @@ This repo deploys to **GitHub Pages** automatically on every push to `main` (see
 │   ├── library.js      # Section library and built-in templates
 │   ├── shields.js      # Offline shields.io badge fallback
 │   ├── util.js         # Shared helpers (storage, toasts, dialogs, downloads)
+│   ├── legal.css       # Styles for the policy pages
 │   └── styles.css
 └── vite.config.js
 ```
@@ -88,6 +91,10 @@ To add a new section, add an entry to `LIB` in [src/library.js](src/library.js).
 - [marked](https://marked.js.org/) for markdown rendering
 - [DOMPurify](https://github.com/cure53/DOMPurify) to sanitise the preview
 - [JSZip](https://stuk.github.io/jszip/) for the .zip export
+
+## Privacy
+
+Readme Forge has no server, accounts or analytics. Your work stays in your browser. See the [Privacy Policy](privacy.html) and [Terms and Conditions](terms.html), which are also linked inside the app.
 
 ## License
 
