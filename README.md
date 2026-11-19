@@ -94,7 +94,7 @@ To add a new section, add an entry to `LIB` in [src/library.js](src/library.js).
 
 ## Privacy
 
-Readme Forge has no server, accounts or analytics. Your work stays in your browser. See the [Privacy Policy](privacy.html) and [Terms and Conditions](terms.html), which are also linked inside the app.
+Readme Forge has no server, accounts or analytics. Your work stays in your browser. See the [Privacy Policy](https://squidly1408.github.io/ReadMe-Forge/privacy.html) and [Terms and Conditions](https://squidly1408.github.io/ReadMe-Forge/terms.html), which are also linked inside the app.
 
 ## License
 
